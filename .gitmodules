@@ -1,0 +1,3 @@
+[submodule "projects/mw-library"]
+	path = projects/mw-library
+	url = https://github.com/mpp21x/mw-library.git
