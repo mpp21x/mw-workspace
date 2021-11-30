@@ -8,9 +8,9 @@ Angular Library
 
 `./node_modules/.bin/ng generate library XXX --prefix matt`
 
-`./node_modules/.bin/ng build mw-library --watch`
+`./node_modules/.bin/ng build mw2021-library --watch`
 
-`./node_modules/.bin/ng build mw-library --prod`
+`./node_modules/.bin/ng build mw2021-library --prod`
 
 
 # 開發 Library 以及更新版本流程

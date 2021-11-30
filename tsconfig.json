@@ -11,9 +11,9 @@
     "moduleResolution": "node",
     "importHelpers": true,
     "paths": {
-      "mw-library": [
-        "dist/mw-library/mw-library",
-        "dist/mw-library"
+      "mw2021-library": [
+        "dist/mw2021-library/mw2021-library",
+        "dist/mw2021-library"
       ]
     },
     "target": "es2015",
