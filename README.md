@@ -1,27 +1,25 @@
 # MwWorkspace
+ 
+Angular Library
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.14.
 
-## Development server
+# 常用指令
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
+`./node_modules/.bin/ng generate library XXX --prefix matt`
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+`./node_modules/.bin/ng build mw-library --watch`
 
-## Build
+`./node_modules/.bin/ng build mw-library --prod`
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
-## Running unit tests
+# 開發 Library 以及更新版本流程
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+* 修改 library source code
+* 需要在 library 的 `index.ts` 輸出新增或修改的 Class 或是 Function，外部才可以存取
+* 修改 `package.json` 的 `version`
+* 在 `mw-workspace` 裏面輸入 `ng build {library_name}  --prod` 指令，編譯 Ivy Library輸出至 dist
+* 移動 source code(ts) 到 dist 裡面的 library 同名資料夾 (Optional)
+* 輸入 `npm publish` 上傳 (必須在 `dist/{library}` 輸入)
+* Git Submodule(Library) commit & Git Repository()
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
