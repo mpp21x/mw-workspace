@@ -1,16 +1,16 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import {InputSelectComponent} from './page/input-select/input-select.component';
+import {DatetimePickerComponent} from './page/datetime-picker/datetime-picker.component';
 
 const routes: Routes = [
   {
-    path: '',
-    redirectTo: 'input-select',
-    pathMatch: 'full',
-  },
-  {
     path: 'input-select',
     component: InputSelectComponent
+  },
+  {
+    path: 'datetime-picker',
+    component: DatetimePickerComponent
   }
 ];
 
